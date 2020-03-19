@@ -1,0 +1,66 @@
+﻿@model DeliverySite.Models.Manufacturer
+
+@{
+    ViewBag.Title = "Detalii";
+}
+
+<h2>Detalii</h2>
+
+<div>
+    <h4>Producator</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ManufacturerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ManufacturerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdressManufacturer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdressManufacturer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactNumberManufacurer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactNumberManufacurer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailManufacturer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailManufacturer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShereManufacturer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShereManufacturer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImagePathLoggo)
+        </dt>
+
+        <dd>
+            <img src="~/Content/Manufacturers/@Model.ImagePathLoggo" width="50" height="50"/>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
